@@ -123,3 +123,19 @@ a0f94a4 Перекласти заголовок українською
 Рівень 1 «Знайомство з комітами в Git» — пройдено за 2 команди (git commit двічі), оптимально.
 Рівень 2 «Розгалуження в Git» — пройдено за 2 команди (git branch bugFix, git switch bugFix), оптимально.
 Рівень 3 «Злиття гілок в Git» — пройдено за 6 команд (git branch bugFix, git switch bugFix, git commit, git switch main, git commit, git merge bugFix). Еталонне рішення — 5 команд: замість git branch + git switch можна одразу написати git switch -c bugFix.
+
+W-07. Сторінка «Про автора» (Практична 8)
+Виконав: Богдан Глодовський, група ІПЗ 3/2
+
+Семантична розмітка — це використання тегів, назва яких пояснює зміст блоку: header — шапка, nav — меню, main — основний вміст, article і section — самостійні частини сторінки, footer — підвал. На відміну від однакових div, такі теги зрозумілі браузеру, пошуковим системам і програмам для незрячих, які можуть, наприклад, одразу перейти до меню чи основного вмісту. Крім того, семантичний код легше читати й підтримувати: з першого погляду видно, де яка частина сторінки.
+
+Використані теги:
+- структура документа: <!DOCTYPE html>, html, head, meta, title, body;
+- семантичні: header, nav, main, section, article, footer, figure, figcaption, details, summary;
+- текст: h1, h2, p, strong, em, span;
+- списки: ul, li;
+- таблиця: table, thead, tbody, tr, th, td;
+- посилання й зображення: a (у тому числі mailto:, target="_blank" з rel="noopener", якірні #skills, #plan, #contacts), img з alt, width, height;
+- контейнер: div (лише для текстової частини профілю profile-text).
+
+Перевірка: валідатор validator.w3.org показав 0 помилок і 0 попереджень для index.html, about.html і docs/links.html; усі зображення завантажуються зі статусом 200.
