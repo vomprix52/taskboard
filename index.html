@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskBoard</title>
+    <title>TaskBoard: дошка завдань</title>
 </head>
 <body>
-    <h1>Дошка завдань: керуй завданнями</h1>
-    <img src="images/logo.png" alt="Логотип TaskBoard" width="200">
-    <p>Моя перша сторінка. Тут буде дошка завдань.</p>
-    <p>TaskBoard допоможе керувати завданнями команди.</p>
-    <p>Автор: <strong>Богдан Глодовський</strong>, група ІПЗ 3/2</p>
-    <a href="https://developer.mozilla.org/uk/">Довідник MDN</a>
-    <p><a href="about.html">Про проєкт</a></p>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/logo.png" alt="Логотип TaskBoard" width="36" height="36">
+            <span>TaskBoard</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про автора</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h1>Дошка завдань</h1>
+            <p>TaskBoard допоможе записувати справи, ставити їм статуси й відстежувати виконання. Це навчальний проєкт з дисципліни «Технології створення веб-застосунків».</p>
+            <details>
+                <summary>Що таке TaskBoard?</summary>
+                <p>TaskBoard — це вебзастосунок для керування завданнями: створюєш задачу, позначаєш її статус і бачиш, що вже зроблено. Проєкт розвивається поетапно: від простої HTML-сторінки до сервісу на Flask з базою даних.</p>
+            </details>
+            <p><a href="docs/links.html">Корисні посилання</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 TaskBoard · Богдан Глодовський, ІПЗ 3/2</p>
+    </footer>
 </body>
 </html>
